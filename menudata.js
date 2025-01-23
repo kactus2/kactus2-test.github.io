@@ -146,9 +146,4 @@ var menudata={children:[
 {text:"File Members",url:"globals.html",children:[
 {text:"All",url:"globals.html"},
 {text:"Functions",url:"globals_func.html"},
-{text:"Macros",url:"globals_defs.html"}]}]}]},
-{text:"Wiki",url:"Kactus2-wiki.html",children:[
-{text:"Building Kactus2 from source",url:"building-kactus2-from-source.html"},
-{text:"Contributing",url:"contributing-to-kactus2.html"},
-{text:"Educational resources",url:"educational-resources.html"},
-{text:"PythonAPI documentation",url:"pythonapi-documentation.html"}]}]}
+{text:"Macros",url:"globals_defs.html"}]}]}]}]}

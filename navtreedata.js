@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "My Project", "index.html", [
+    [ "Kactus2 documentation page", "index.html", "index" ],
     [ "API Reference", "usergroup0.html", [
       [ "Namespace List", "namespaces.html", [
         [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -54,12 +55,6 @@ var NAVTREE =
           [ "Macros", "globals_defs.html", null ]
         ] ]
       ] ]
-    ] ],
-    [ "Wiki", "Kactus2-wiki.html", [
-      [ "Building Kactus2 from source", "building-kactus2-from-source.html", null ],
-      [ "Contributing", "contributing-to-kactus2.html", null ],
-      [ "Educational resources", "educational-resources.html", null ],
-      [ "PythonAPI documentation", "pythonapi-documentation.html", null ]
     ] ]
   ] ]
 ];
@@ -67,14 +62,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AbstractParameterInterface_8h.html",
-"classAbstractParameterInterface.html#aaa32ddf380732611ca66410c930aed17",
-"classComponentInstanceInterface.html#aa9e5544d998af958ac2521e81e30087b",
-"classFileChannel.html#ae9243fea9999676d91f8189bbaee43dc",
-"classInterconnectionInterface.html#a30103fe088eb2eee4de7a70563da5ad2",
-"classMemoryBlockInterface.html#afc30df75d1c32bdbd7b03498013c9c65",
-"classPluginUtilityAdapter.html#aa6fd4800db3cd2221f90d4fb3417e2d6",
-"classPortsInterface.html#addd46971d926720d34d772c6952eeda9",
-"functions_func_d.html"
+"classAbstractParameterInterface.html#aab46cf34e0fa28dd98bc0c602442f47b",
+"classComponentInstanceInterface.html#ac6e9c205614eecc416ddcde880ab4327",
+"classFileInterface.html#a04c9d4ae32748073d7d079aebd02afe4",
+"classInterconnectionInterface.html#a383258d290d99398d438921fc52be499",
+"classMemoryMapExpressionGatherer.html",
+"classPluginUtilityAdapter.html#ab5cb710824aec0afe8c8240030bf5995",
+"classPortsInterface.html#ae268096e7b6462c33006aa82360cf67f",
+"functions_func_h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
