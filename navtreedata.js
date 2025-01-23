@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
+  [ "Kactus2", "index.html", [
     [ "Kactus2 documentation page", "index.html", "index" ],
     [ "API Reference", "usergroup0.html", [
       [ "Namespace List", "namespaces.html", [
