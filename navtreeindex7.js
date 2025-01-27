@@ -224,8 +224,6 @@ var NAVTREEINDEX7 =
 "classWriteChannel.html#a6a7509eb5e4fc6b409ab89875b520d3f":[1,1,0,92,1],
 "classWriteChannel.html#ac7479dbcbe0395e56e003e40164041e1":[1,1,0,92,0],
 "classes.html":[1,1,1],
-"constructPythonComponent_8py.html":[1,2,0,0,2,2],
-"constructPythonComponent_8py_source.html":[1,2,0,0,2,2],
 "dir_0a34b0d14b66f1f24f20c56542c7133d.html":[1,2,0,0],
 "dir_293dc1c9a4226f1724d124e8d023c02d.html":[1,2,0,0,1,0],
 "dir_34038f1fe42544a6573b782468304e6e.html":[1,2,0,0,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX7 =
 "functions_func_d.html":[1,1,3,1,3],
 "functions_func_e.html":[1,1,3,1,4],
 "functions_func_f.html":[1,1,3,1,5],
-"functions_func_g.html":[1,1,3,1,6]
+"functions_func_g.html":[1,1,3,1,6],
+"functions_func_h.html":[1,1,3,1,7],
+"functions_func_i.html":[1,1,3,1,8]
 };

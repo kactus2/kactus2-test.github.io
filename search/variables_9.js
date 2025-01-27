@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['math_5ffunction_0',['MATH_FUNCTION',['../namespaceSystemVerilogSyntax.html#ad83b2d343c75ef1f6480f5c6fc91987b',1,'SystemVerilogSyntax']]],
-  ['migrateword_1',['migrateWord',['../namespacepythonHelps.html#a0210f36a9bf246401fc439b39775fb74',1,'pythonHelps']]],
-  ['modelparameter_2',['MODELPARAMETER',['../namespaceImportColors.html#a1b68f966b3a388d505690a75f8c60ae9',1,'ImportColors']]],
-  ['mutable_5f_3',['mutable_',['../structUtils_1_1FirmnessOptions.html#a82bfdc1416428f4fa868b843f79b9c80',1,'Utils::FirmnessOptions']]]
+  ['octal_5fnumber_0',['OCTAL_NUMBER',['../namespaceSystemVerilogSyntax.html#a53e76ef00df36bfd3bd1a48f0ce6f72f',1,'SystemVerilogSyntax']]]
 ];

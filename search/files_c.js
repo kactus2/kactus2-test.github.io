@@ -13,7 +13,6 @@ var searchData=
   ['pythonapi_2ecpp_10',['PythonAPI.cpp',['../PythonAPI_8cpp.html',1,'']]],
   ['pythonapi_2eh_11',['PythonAPI.h',['../PythonAPI_8h.html',1,'']]],
   ['pythonapi_5fglobal_2eh_12',['pythonapi_global.h',['../pythonapi__global_8h.html',1,'']]],
-  ['pythonhelps_2epy_13',['pythonHelps.py',['../pythonHelps_8py.html',1,'']]],
-  ['pythoninterpreter_2ecpp_14',['PythonInterpreter.cpp',['../PythonInterpreter_8cpp.html',1,'']]],
-  ['pythoninterpreter_2eh_15',['PythonInterpreter.h',['../PythonInterpreter_8h.html',1,'']]]
+  ['pythoninterpreter_2ecpp_13',['PythonInterpreter.cpp',['../PythonInterpreter_8cpp.html',1,'']]],
+  ['pythoninterpreter_2eh_14',['PythonInterpreter.h',['../PythonInterpreter_8h.html',1,'']]]
 ];

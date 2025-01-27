@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filehandler_0',['FileHandler',['../namespaceFileHandler.html',1,'']]]
+  ['importcolors_0',['ImportColors',['../namespaceImportColors.html',1,'']]]
 ];

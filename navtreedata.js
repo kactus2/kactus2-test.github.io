@@ -69,7 +69,7 @@ var NAVTREEINDEX =
 "classMemoryMapExpressionGatherer.html",
 "classPluginUtilityAdapter.html#ab5cb710824aec0afe8c8240030bf5995",
 "classPortsInterface.html#ae268096e7b6462c33006aa82360cf67f",
-"functions_func_h.html"
+"functions_func_l.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
