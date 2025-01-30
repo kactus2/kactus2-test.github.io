@@ -110,7 +110,7 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="home"></a></p>
 <p>Welcome to the Kactus2 reference page. Here you can find the API reference for the <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> as well as the reference for the supporting KactusAPI module.</p>
-<h1><a class="anchor" id="pythonapi"></a>
+<h1><a class="anchor" id="autotoc_md0"></a>
 PythonAPI</h1>
 <p>The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> is a Python module that enables scripting support for Kactus2 using Python. The library uses SWIG to wrap the <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> C++ class into a Python module. This reference guide contains the C++ descriptions for the <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> class and its methods.</p>
 <p>The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> contains classes and methods to manipulate Kactus2 IP-XACT objects. Everything is designed to be accessed wholly through the <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> class, which contains methods to access the underlying KactusAPI interfaces, which in turn do the heavy lifting in interfacing with the IP-XACT models. The SWIG wrapper isn't perfect and thus some KactusAPI interfaces wrapped for Python might contain methods that are not meant to be called from a Python script. For example, any functions either returning Qt-types or taking them as paremeters should not be called using Python.</p>
@@ -120,10 +120,10 @@ PythonAPI</h1>
 <li>Launching generators and importers</li>
 </ul>
 <p>NOTE: The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> currently only supports IP-XACT 2014 documents, but support for IP-XACT 2022 is planned.</p>
-<h2><a class="anchor" id="pythonapi-usage"></a>
+<h2><a class="anchor" id="autotoc_md1"></a>
 PythonAPI usage</h2>
 <p><a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> is not a standalone module and must be used in tandem with Kactus2 either inside the Kactus2 GUI in the "Script editor" window or on the command line Python interpreter by starting Kactus2 with the -c (&ndash;no-gui) option. Running scripts in the GUI can be done by opening the script and pressing the "Run all" button. Running ready-made scripts on the CLI can be done by running <code>exec(open("filename").read())</code>.</p>
-<h2><a class="anchor" id="usable-kactusapi-interfaces"></a>
+<h2><a class="anchor" id="autotoc_md2"></a>
 Usable KactusAPI interfaces</h2>
 <p>The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> automatically initializes and provides methods to access the following KactusAPI interfaces, which can be used to modify component sub-elements:</p>
 <ul>
@@ -135,7 +135,7 @@ Usable KactusAPI interfaces</h2>
 </ul>
 <p>Above interfaces may contain sub-interfaces that give further access to sub-elements, for example the address blocks for a memory map can be accessed via the <a class="el" href="classAddressBlockInterface.html" title="Interface for editing address blocks.">AddressBlockInterface</a> that in turn can be accessed with the getAddressBlockInterface() method of <a class="el" href="classMemoryMapInterface.html" title="Interface for editing memory maps and remaps.">MemoryMapInterface</a>. <br  />
 </p>
-<h2><a class="anchor" id="scripting-examples"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 Scripting examples</h2>
 <p>Scripting examples can be found here. </p>
 </div></div><!-- PageDoc -->
