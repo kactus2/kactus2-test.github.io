@@ -24,6 +24,8 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
+{text:"Examples",url:"@ref examples",children:[
+{text:"Main Page",url:"index.html"},
 {text:"API Reference",url:"usergroup0.html",children:[
 {text:"Namespace List",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"},
@@ -118,4 +120,4 @@ var menudata={children:[
 {text:"File Members",url:"globals.html",children:[
 {text:"All",url:"globals.html"},
 {text:"Functions",url:"globals_func.html"},
-{text:"Macros",url:"globals_defs.html"}]}]}]}]}
+{text:"Macros",url:"globals_defs.html"}]}]}]}]}]}

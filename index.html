@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Kactus2: Kactus2 documentation page</title>
+<title>Kactus2: Kactus2 reference guide</title>
 <link rel="icon" href="appicon.ico" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -105,17 +105,39 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Kactus2 documentation page </div></div>
+  <div class="headertitle"><div class="title">Kactus2 reference guide </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_kactus2dev-testing_2Administrative_2docs_2Kactus2-docs"></a></p>
-<p>Welcome to the Kactus2 docs page. Here you can find the API Reference as well as the general Wiki for all things Kactus2.</p>
-<h1><a class="anchor" id="header-1"></a>
-Header 1</h1>
-<p>some stuff is written here</p>
-<h1><a class="anchor" id="header-2"></a>
-Header 2</h1>
-<p>some more stuff is written here </p>
+<div class="textblock"><p><a class="anchor" id="home"></a></p>
+<p>Welcome to the Kactus2 reference page. Here you can find the API reference for the <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> as well as the reference for the supporting KactusAPI module.</p>
+<h1><a class="anchor" id="pythonapi"></a>
+PythonAPI</h1>
+<p>The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> is a Python module that enables scripting support for Kactus2 using Python. The library uses SWIG to wrap the <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> C++ class into a Python module. This reference guide contains the C++ descriptions for the <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> class and its methods.</p>
+<p>The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> contains classes and methods to manipulate Kactus2 IP-XACT objects. Everything is designed to be accessed wholly through the <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> class, which contains methods to access the underlying KactusAPI interfaces, which in turn do the heavy lifting in interfacing with the IP-XACT models. The SWIG wrapper isn't perfect and thus some KactusAPI interfaces wrapped for Python might contain methods that are not meant to be called from a Python script. For example, any functions either returning Qt-types or taking them as paremeters should not be called using Python.</p>
+<p>The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> currently contains the following functionality:</p><ul>
+<li>Creating and modifying components (including component memory maps, address blocks, etc., as well as bus interfaces)</li>
+<li>Creating and modifying designs (including adding/removing component instances and connections)</li>
+<li>Launching generators and importers</li>
+</ul>
+<p>NOTE: The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> currently only supports IP-XACT 2014 documents, but support for IP-XACT 2022 is planned.</p>
+<h2><a class="anchor" id="pythonapi-usage"></a>
+PythonAPI usage</h2>
+<p><a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> is not a standalone module and must be used in tandem with Kactus2 either inside the Kactus2 GUI in the "Script editor" window or on the command line Python interpreter by starting Kactus2 with the -c (&ndash;no-gui) option. Running scripts in the GUI can be done by opening the script and pressing the "Run all" button. Running ready-made scripts on the CLI can be done by running <code>exec(open("filename").read())</code>.</p>
+<h2><a class="anchor" id="usable-kactusapi-interfaces"></a>
+Usable KactusAPI interfaces</h2>
+<p>The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> automatically initializes and provides methods to access the following KactusAPI interfaces, which can be used to modify component sub-elements:</p>
+<ul>
+<li><a class="el" href="classPortsInterface.html" title="Interface for editing component ports.">PortsInterface</a> for modifying component ports</li>
+<li><a class="el" href="classParametersInterface.html" title="Interface for editing parameters.">ParametersInterface</a> for modifying component parameters</li>
+<li><a class="el" href="classMemoryMapInterface.html" title="Interface for editing memory maps and remaps.">MemoryMapInterface</a> for modifying component memory maps</li>
+<li><a class="el" href="classFileSetInterface.html" title="Interface for editing filesets.">FileSetInterface</a> for modifying component file sets</li>
+<li><a class="el" href="classBusInterfaceInterface.html" title="Interface for accessing bus interfaces.">BusInterfaceInterface</a> for modifying component bus interfaces</li>
+</ul>
+<p>Above interfaces may contain sub-interfaces that give further access to sub-elements, for example the address blocks for a memory map can be accessed via the <a class="el" href="classAddressBlockInterface.html" title="Interface for editing address blocks.">AddressBlockInterface</a> that in turn can be accessed with the getAddressBlockInterface() method of <a class="el" href="classMemoryMapInterface.html" title="Interface for editing memory maps and remaps.">MemoryMapInterface</a>. <br  />
+</p>
+<h2><a class="anchor" id="scripting-examples"></a>
+Scripting examples</h2>
+<p>Scripting examples can be found here. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

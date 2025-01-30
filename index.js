@@ -1,5 +1,8 @@
 var index =
 [
-    [ "Header 1", "index.html#header-1", null ],
-    [ "Header 2", "index.html#header-2", null ]
+    [ "PythonAPI", "index.html#pythonapi", [
+      [ "PythonAPI usage", "index.html#pythonapi-usage", null ],
+      [ "Usable KactusAPI interfaces", "index.html#usable-kactusapi-interfaces", null ],
+      [ "Scripting examples", "index.html#scripting-examples", null ]
+    ] ]
 ];

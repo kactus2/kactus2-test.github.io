@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['page_0',['Kactus2 documentation page',['../index.html',1,'']]]
+  ['reference_20guide_0',['Kactus2 reference guide',['../index.html',1,'']]]
 ];
