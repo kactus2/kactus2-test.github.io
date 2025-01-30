@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classInterconnectionInterface.html#a35974c1884833d442650f7742829c86c":[2,1,0,43,14],
 "classInterconnectionInterface.html#a383258d290d99398d438921fc52be499":[2,1,0,43,19],
 "classInterconnectionInterface.html#a40d112c747ee93f6f65a7237f24c568e":[2,1,0,43,4],
 "classInterconnectionInterface.html#a42100947d98b346ba14a593a3139761a":[2,1,0,43,18],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "classMemoryBlockInterface.html#ad1e0a48b1268a5ba9f9d002c268c1344":[2,1,0,55,29],
 "classMemoryBlockInterface.html#ae120bc4d28e09a04de3b9c3f19f56b6c":[2,1,0,55,18],
 "classMemoryBlockInterface.html#af2e95b5a205df25119c9ec3923052573":[2,1,0,55,5],
-"classMemoryBlockInterface.html#afc30df75d1c32bdbd7b03498013c9c65":[2,1,0,55,28]
+"classMemoryBlockInterface.html#afc30df75d1c32bdbd7b03498013c9c65":[2,1,0,55,28],
+"classMemoryBlockInterface.html#afd42a9f2f1faa38e8fded099e1d328b5":[2,1,0,55,36]
 };

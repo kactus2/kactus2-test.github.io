@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Kactus2", "index.html", [
     [ "Kactus2 reference guide", "index.html", "index" ],
-    [ "Examples", "@ref examples", null ],
+    [ "Examples", "examples.html", null ],
     [ "API Reference", "usergroup0.html", [
       [ "Namespace List", "namespaces.html", [
         [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -62,14 +62,14 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"@ref examples",
-"classAbstractParameterInterface.html#aaa352d50864b9f595c8177c22e17281a",
-"classComponentInstanceInterface.html#ab4a16d432ce8ab5d1a4a9663bd8c3a09",
-"classFileInterface.html",
-"classInterconnectionInterface.html#a35974c1884833d442650f7742829c86c",
-"classMemoryBlockInterface.html#afd42a9f2f1faa38e8fded099e1d328b5",
-"classPluginUtilityAdapter.html#aab7cd19f1669fdcfcda110707436e039",
-"classPortsInterface.html#ae17280bb99013a6cea98213b210bda24",
+"AbstractParameterInterface_8h.html",
+"classAbstractParameterInterface.html#aab46cf34e0fa28dd98bc0c602442f47b",
+"classComponentInstanceInterface.html#ac6e9c205614eecc416ddcde880ab4327",
+"classFileInterface.html#a04c9d4ae32748073d7d079aebd02afe4",
+"classInterconnectionInterface.html#a383258d290d99398d438921fc52be499",
+"classMemoryMapExpressionGatherer.html",
+"classPluginUtilityAdapter.html#ab5cb710824aec0afe8c8240030bf5995",
+"classPortsInterface.html#ae268096e7b6462c33006aa82360cf67f",
 "functions_func_i.html"
 ];
 

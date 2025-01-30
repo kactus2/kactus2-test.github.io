@@ -24,7 +24,7 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
-{text:"Examples",url:"@ref examples"},
+{text:"Examples",url:"examples.html"},
 {text:"API Reference",url:"usergroup0.html",children:[
 {text:"Namespace List",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"},

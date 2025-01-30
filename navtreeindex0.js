@@ -1,6 +1,5 @@
 var NAVTREEINDEX0 =
 {
-"@ref examples":[1],
 "AbstractParameterInterface_8h.html":[2,2,0,0,1,0,1],
 "AbstractParameterInterface_8h_source.html":[2,2,0,0,1,0,1],
 "AbstractionTypeInterface_8h.html":[2,2,0,0,1,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "classAbstractParameterInterface.html#aa1df0f013608aa1745fd64d43ae3d81c":[2,1,0,2,21],
 "classAbstractParameterInterface.html#aa2e2747414353cc0adde9b0e058fc624":[2,1,0,2,17],
 "classAbstractParameterInterface.html#aa985cdc12842d3068d497c5515ada769":[2,1,0,2,26],
-"classAbstractParameterInterface.html#aaa32ddf380732611ca66410c930aed17":[2,1,0,2,2]
+"classAbstractParameterInterface.html#aaa32ddf380732611ca66410c930aed17":[2,1,0,2,2],
+"classAbstractParameterInterface.html#aaa352d50864b9f595c8177c22e17281a":[2,1,0,2,6]
 };
