@@ -24,7 +24,7 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
-{text:"Examples",url:"examples.html"},
+{text:"Examples",url:"md_kactus2dev-testing_2Administrative_2docs_2Python-examples.html#examples"},
 {text:"API Reference",url:"usergroup0.html",children:[
 {text:"Namespace List",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"},
