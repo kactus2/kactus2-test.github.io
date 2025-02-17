@@ -68,12 +68,15 @@ var searchData=
   ['resetmodel_65',['resetModel',['../classLibraryHandler.html#aea6760acd40edad35dfd36a37e627b18',1,'LibraryHandler']]],
   ['resolvepath_66',['resolvePath',['../namespaceFileHandler.html#a95e55f3874b980b233044d0c6338e219',1,'FileHandler']]],
   ['resolveuri_67',['resolveURI',['../namespaceFileHandler.html#a68308b798da73cc5be6d8703f1d4a550',1,'FileHandler']]],
-  ['revision_68',['revision',['../structUtils_1_1FilterOptions.html#a54e012b73d1164353b8481065697924a',1,'Utils::FilterOptions']]],
-  ['revisionoptions_69',['RevisionOptions',['../structUtils_1_1RevisionOptions.html',1,'Utils::RevisionOptions'],['../structUtils_1_1RevisionOptions.html#a70fbf2a70171fc97e8ab01f4544b5620',1,'Utils::RevisionOptions::RevisionOptions()']]],
-  ['root_70',['ROOT',['../classHierarchyItem.html#a02483ce71b8b19000e574754adcd79cea6401e46c4f30bf60fc796b14632c6761',1,'HierarchyItem::ROOT'],['../classLibraryItem.html#a6e26235b90ebcbb987d1158cccd2ef30aea2adde5c377cb5e09d14b71935c6f32',1,'LibraryItem::ROOT']]],
-  ['row_71',['row',['../classHierarchyItem.html#a1fba172d815911de5a37661667be2c34',1,'HierarchyItem::row()'],['../classLibraryItem.html#ae39d87a495b527c9f331599c0a2982b5',1,'LibraryItem::row()']]],
-  ['rowcount_72',['rowCount',['../classHierarchyModel.html#ac0f6c56ede93dc96aae8cb3600f65e5b',1,'HierarchyModel::rowCount()'],['../classLibraryTreeModel.html#adea50a7ce54416323e929973322ff7b7',1,'LibraryTreeModel::rowCount()']]],
-  ['run_73',['run',['../classImportRunner.html#a148221241255eea356ae52825c9c9575',1,'ImportRunner']]],
-  ['runfile_74',['runFile',['../classPythonInterpreter.html#aeea7dc2a4cdd9d0b57f68edaf4a68336',1,'PythonInterpreter']]],
-  ['rungenerator_75',['runGenerator',['../classCLIGenerator.html#a35b12150e045c76b8eb7ae70e497eb1c',1,'CLIGenerator::runGenerator()'],['../classIGeneratorPlugin.html#a14a5fd11109ee5b1cc46909e773ef5f5',1,'IGeneratorPlugin::runGenerator()']]]
+  ['result_5fbus_2epng_68',['result_bus.png',['../result__bus_8png.html',1,'']]],
+  ['result_5fportmaps_2epng_69',['result_portmaps.png',['../result__portmaps_8png.html',1,'']]],
+  ['result_5fports_2epng_70',['result_ports.png',['../result__ports_8png.html',1,'']]],
+  ['revision_71',['revision',['../structUtils_1_1FilterOptions.html#a54e012b73d1164353b8481065697924a',1,'Utils::FilterOptions']]],
+  ['revisionoptions_72',['RevisionOptions',['../structUtils_1_1RevisionOptions.html',1,'Utils::RevisionOptions'],['../structUtils_1_1RevisionOptions.html#a70fbf2a70171fc97e8ab01f4544b5620',1,'Utils::RevisionOptions::RevisionOptions()']]],
+  ['root_73',['ROOT',['../classHierarchyItem.html#a02483ce71b8b19000e574754adcd79cea6401e46c4f30bf60fc796b14632c6761',1,'HierarchyItem::ROOT'],['../classLibraryItem.html#a6e26235b90ebcbb987d1158cccd2ef30aea2adde5c377cb5e09d14b71935c6f32',1,'LibraryItem::ROOT']]],
+  ['row_74',['row',['../classHierarchyItem.html#a1fba172d815911de5a37661667be2c34',1,'HierarchyItem::row()'],['../classLibraryItem.html#ae39d87a495b527c9f331599c0a2982b5',1,'LibraryItem::row()']]],
+  ['rowcount_75',['rowCount',['../classHierarchyModel.html#ac0f6c56ede93dc96aae8cb3600f65e5b',1,'HierarchyModel::rowCount()'],['../classLibraryTreeModel.html#adea50a7ce54416323e929973322ff7b7',1,'LibraryTreeModel::rowCount()']]],
+  ['run_76',['run',['../classImportRunner.html#a148221241255eea356ae52825c9c9575',1,'ImportRunner']]],
+  ['runfile_77',['runFile',['../classPythonInterpreter.html#aeea7dc2a4cdd9d0b57f68edaf4a68336',1,'PythonInterpreter']]],
+  ['rungenerator_78',['runGenerator',['../classCLIGenerator.html#a35b12150e045c76b8eb7ae70e497eb1c',1,'CLIGenerator::runGenerator()'],['../classIGeneratorPlugin.html#a14a5fd11109ee5b1cc46909e773ef5f5',1,'IGeneratorPlugin::runGenerator()']]]
 ];
