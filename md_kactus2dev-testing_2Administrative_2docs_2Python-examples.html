@@ -229,7 +229,7 @@ Adding registers and fields</h4>
 Modifying component bus interfaces</h3>
 <p>The components bus interfaces are directly accessible through the <a class="el" href="classBusInterfaceInterface.html" title="Interface for accessing bus interfaces.">BusInterfaceInterface</a> class, after <a class="el" href="classPythonAPI.html#a311926338ac81d14db6e87ed1b5ebeda">PythonAPI::openComponent</a> has been called.</p>
 <p>In this example, we'll first create some ports for our component. Then, we'll create a bus interface and some portmaps for it. For mapping ports, we need a bus- and abstraction definition, which cannot be created via the python API, but can be created in the GUI.</p>
-<p>The bus definition created for this example is not modified in any way and its VLNV is Company:Lib:TestBus:1.0. The abstraction defintion is Company:Lib:TestBus.absDef:1.0. Here's abstraction definition used: <img src="testAbsDef.png" alt="Example abstraction definition" class="inline"/></p>
+<p>The bus definition created for this example is not modified in any way and its VLNV is Company:Lib:TestBus:1.0. The abstraction defintion is Company:Lib:TestBus.absDef:1.0. Here's abstraction definition used: <img src="testAbsDef.png" alt="" class="inline" title="Example abstraction definition"/>    </p>
 <p>Let's start by creating the physical component ports: </p><div class="fragment"><div class="line">portsInterface = kactus2py.getPortsInterface()</div>
 <div class="line">portsInterface.addWirePort(<span class="stringliteral">&quot;some_rx&quot;</span>)</div>
 <div class="line">portsInterface.setDirection(<span class="stringliteral">&quot;some_rx&quot;</span>, <span class="stringliteral">&quot;in&quot;</span>)</div>
@@ -284,9 +284,9 @@ Modifying component bus interfaces</h3>
 <div class="line">portMapInterface.setPhysicalPort(newPortMapIndex, <span class="stringliteral">&quot;some_rx&quot;</span>)</div>
 <div class="line"> </div>
 <div class="line"><span class="comment"># If no port mapping bounds are set, then the whole logical and physical ports will be used.</span></div>
-</div><!-- fragment --><p>Resulting ports shown in GUI after running script: <img src="result_ports.png" alt="Created ports" class="inline"/></p>
-<p>The created bus interface: <img src="result_bus.png" alt="Created bus interface" class="inline"/></p>
-<p>And the portmaps: <img src="result_portmaps.png" alt="Created portmaps" class="inline"/> </p>
+</div><!-- fragment --><p>Resulting ports shown in GUI after running script: <img src="result_ports.png" alt="" class="inline" title="Created ports"/>    </p>
+<p>The created bus interface: <img src="result_bus.png" alt="" class="inline" title="Created bus interface"/>    </p>
+<p>And the portmaps: <img src="result_portmaps.png" alt="" class="inline" title="Created portmaps"/>     </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
