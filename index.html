@@ -122,7 +122,7 @@ PythonAPI</h1>
 <p>NOTE: The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> currently only supports IP-XACT 2014 documents, but support for IP-XACT 2022 is planned.</p>
 <h2><a class="anchor" id="autotoc_md1"></a>
 PythonAPI usage</h2>
-<p><a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> is not a standalone module and must be used in tandem with Kactus2 either inside the Kactus2 GUI in the "Script editor" window or on the command line Python interpreter by starting Kactus2 with the -c (&ndash;no-gui) option. Running scripts in the GUI can be done by opening the script and pressing the "Run all" button. Running ready-made scripts on the CLI can be done by running <code>exec(open("filename").read())</code>.</p>
+<p><a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> is not a standalone module and must be used in tandem with Kactus2 either inside the Kactus2 GUI in the "Script editor" window or on the command line Python interpreter by starting Kactus2 with the -c (&ndash;no-gui) option. Running scripts in the GUI can be done by opening the script and pressing the "Run all" button. Running ready-made scripts on the CLI can be done by running <code>exec(open("&lt;fil path&gt;").read())</code>.</p>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Usable KactusAPI interfaces</h2>
 <p>The <a class="el" href="classPythonAPI.html" title="Interface for accessing Kactus2 data using Python.">PythonAPI</a> automatically initializes and provides methods to access the following KactusAPI interfaces, which can be used to modify component sub-elements:</p>
@@ -133,7 +133,7 @@ Usable KactusAPI interfaces</h2>
 <li><a class="el" href="classFileSetInterface.html" title="Interface for editing filesets.">FileSetInterface</a> for modifying component file sets</li>
 <li><a class="el" href="classBusInterfaceInterface.html" title="Interface for accessing bus interfaces.">BusInterfaceInterface</a> for modifying component bus interfaces</li>
 </ul>
-<p>Above interfaces may contain sub-interfaces that give further access to sub-elements, for example the address blocks for a memory map can be accessed via the <a class="el" href="classAddressBlockInterface.html" title="Interface for editing address blocks.">AddressBlockInterface</a> that in turn can be accessed with the getAddressBlockInterface() method of <a class="el" href="classMemoryMapInterface.html" title="Interface for editing memory maps and remaps.">MemoryMapInterface</a>. <br  />
+<p>Above interfaces may contain sub-interfaces that give further access to sub-elements, for example the address blocks for a memory map can be accessed via the <a class="el" href="classAddressBlockInterface.html" title="Interface for editing address blocks.">AddressBlockInterface</a> which in turn can be accessed with <a class="el" href="classMemoryMapInterface.html#a3de8a2e844f178aa8e4fddb84e59800d">MemoryMapInterface::getAddressBlockInterface</a>. <br  />
 </p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Scripting examples</h2>
