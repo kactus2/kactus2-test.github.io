@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['python_20examples_0',['Python-examples',['../md_kactus2dev-testing_2Administrative_2docs_2Python-examples.html',1,'']]]
+  ['reference_20guide_0',['Kactus2 reference guide',['../index.html',1,'']]]
 ];

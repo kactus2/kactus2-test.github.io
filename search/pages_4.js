@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reference_20guide_0',['Kactus2 reference guide',['../index.html',1,'']]]
+  ['scripting_20examples_0',['Kactus2 scripting examples',['../examples.html',1,'']]]
 ];

@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Kactus2", "index.html", [
     [ "Kactus2 reference guide", "index.html", "index" ],
-    [ "Examples", "md_kactus2dev-testing_2Administrative_2docs_2Python-examples.html#examples", null ],
+    [ "Examples", "examples.html", null ],
     [ "API Reference", "usergroup0.html", [
       [ "Namespace List", "namespaces.html", [
         [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -70,7 +70,7 @@ var NAVTREEINDEX =
 "classMemoryMapExpressionGatherer.html",
 "classPluginUtilityAdapter.html#ab5cb710824aec0afe8c8240030bf5995",
 "classPortsInterface.html#ae268096e7b6462c33006aa82360cf67f",
-"functions_func_l.html"
+"functions_func_i.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
