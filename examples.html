@@ -163,23 +163,25 @@ Setting up IP-XACT libraries</h1>
 <div class="line">kactus2py.setLibraryPaths([<span class="stringliteral">&#39;C:/some/new/path&#39;</span>, <span class="stringliteral">&#39;C:/another/new/path&#39;</span>]) <span class="comment"># Replaces the active library paths and also sets the first listed path as default</span></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Creating a component</h1>
-<p>Creating a component is done with <a class="el" href="classPythonAPI.html#ac94cf77cfabce387d59950bce5ef2a45">PythonAPI::createComponent</a>. As parameters, it takes the VLNV (vendor, library, name, version) of the component to be created, one parameter each. Example:</p>
-<div class="fragment"><div class="line"><span class="comment"># Create component with VLNV Company:Lib:ComponentName:1.0</span></div>
+<p>Creating a component is done with <a class="el" href="classPythonAPI.html#ac94cf77cfabce387d59950bce5ef2a45">PythonAPI::createComponent</a>. As parameters, it takes the VLNV (vendor, library, name, version) of the component to be created, one parameter each, and the IP-XACT standard revision to use (PythonAPI::StdRev). Example:</p>
+<div class="fragment"><div class="line"><span class="comment"># Create component with VLNV Company:Lib:ComponentName:1.0 using IP-XACT 2014</span></div>
 <div class="line">vendor = <span class="stringliteral">&quot;Company&quot;</span></div>
 <div class="line">library = <span class="stringliteral">&quot;Lib&quot;</span></div>
 <div class="line">name = <span class="stringliteral">&quot;ComponentName&quot;</span></div>
 <div class="line">version = <span class="stringliteral">&quot;1.0&quot;</span></div>
 <div class="line"> </div>
-<div class="line">kactus2py.createComponent(vendor, library, name, version)</div>
-</div><!-- fragment --><p>Currently, the created component will be placed in the <b>default library path</b>.</p>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<div class="line">kactus2py.createComponent(vendor, library, name, version, kactus2py.Std14)</div>
+</div><!-- fragment --><p>Currently, the created component will be placed in the <b>default library path</b>. Supported standard revisions are Std14 and Std22 and the default value is Std22.</p>
+<p>The IP-XACT standard revision of a component can be checked with PythonAPI::getComponentStdRevision : </p><div class="fragment"><div class="line">revision = kactus2py.getComponentStdRevision() <span class="comment"># Returns &quot;1685-2014&quot; in this case</span></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
 Creating a design and adding a component instance</h1>
 <p>Similarly to creating components, a design can be created with <a class="el" href="classPythonAPI.html#a582a9bec7e33d546f45db5dee472329e">PythonAPI::createDesign</a>:</p>
 <div class="fragment"><div class="line">designName = <span class="stringliteral">&quot;AwesomeDesign&quot;</span></div>
 <div class="line">designVersion = <span class="stringliteral">&quot;1.0&quot;</span></div>
 <div class="line"> </div>
-<div class="line">kactus2py.createDesign(vendor, library, designName, designVersion)</div>
-</div><!-- fragment --><p>Creating a design will create 1) The design itself and 2) A top-level component for the design. The top-level component VLNV will become vendor:library:name:version and the design VLNV will become vendor:library:name.design:version. As with components, the design will also be created in the default library.</p>
+<div class="line">kactus2py.createDesign(vendor, library, designName, designVersion, kactus2py.Std14)</div>
+</div><!-- fragment --><p>The IP-XACT standard revision of a design can also be checked with PythonAPI::getDesignStdRevision.</p>
+<p>Creating a design will create 1) The design itself and 2) A top-level component for the design. The top-level component VLNV will become vendor:library:name:version and the design VLNV will become vendor:library:name.design:version. As with components, the design will also be created in the default library.</p>
 <p>The component can then be instantiated and added to the design. Creating a design will automatically set it as active, but in any other case the design must be set active with <a class="el" href="classPythonAPI.html#afae64475954faa45d272b75c0a67de88">PythonAPI::openDesign</a>, which takes the design VLNV as a vlnvString (vendor:library:name:version).</p>
 <p>The component can be instantiated and added to the design with <a class="el" href="classPythonAPI.html#ab151e5e284a634dce73427d924439f27">PythonAPI::addComponentInstance</a>, which also takes a vlnvstring and the instance name:</p>
 <div class="fragment"><div class="line">kactus2py.openDesign(<span class="stringliteral">&quot;:&quot;</span>.join([vendor, library, designName + <span class="stringliteral">&quot;.design&quot;</span>, designVersion]))</div>
