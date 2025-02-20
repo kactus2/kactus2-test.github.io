@@ -152,12 +152,13 @@ Setting up IP-XACT libraries</h1>
 <div class="line"> </div>
 <div class="line">kactus2py = <a class="code hl_class" href="classPythonAPI.html">PythonAPI</a>()</div>
 <div class="line">print(kactus2py.getAllLibraryPaths()) <span class="comment"># Lists all configured paths</span></div>
-<div class="line">print(kactus2py.getAllLibraryPaths()) <span class="comment"># Lists paths currently set active = where Kactus2 looks for IP-XACT files </span></div>
+<div class="line">print(kactus2py.getActiveLibraryPaths()) <span class="comment"># Lists paths currently set active = where Kactus2 looks for IP-XACT files </span></div>
 <div class="line">print(kactus2py.getDefaultLibraryPath()) <span class="comment"># Lists the current default library path</span></div>
 <div class="ttc" id="aclassPythonAPI_html"><div class="ttname"><a href="classPythonAPI.html">PythonAPI</a></div><div class="ttdoc">Interface for accessing Kactus2 data using Python.</div><div class="ttdef"><b>Definition</b> <a href="PythonAPI_8h_source.html#l00065">PythonAPI.h:66</a></div></div>
 </div><!-- fragment --><p>Libraries can be added with PythonAPI::addLibraryPath and removed with PythonAPI::removeLibraryPath. Libraries can be set in bulk with <a class="el" href="classPythonAPI.html#a4751fb0a77c52fa0e8ec213c3d0f5717">PythonAPI::setLibraryPaths</a>, which will add and set active all paths that are given as a list in the function arguments. <a class="el" href="classPythonAPI.html#a5ebc69a0b48d778313617eaddc8f17b7">PythonAPI::setDefaultLibraryPath</a> sets the default location.</p>
-<div class="fragment"><div class="line">kactus2py.addLibraryPath(<span class="stringliteral">&quot;C:/some/path&quot;</span>, <span class="keyword">True</span>) <span class="comment"># optional second argument also sets active (True) or inactive (False), inactive by default</span></div>
+<div class="fragment"><div class="line">kactus2py.addLibraryPath(<span class="stringliteral">&quot;C:/some/path&quot;</span>, <span class="keyword">False</span>) <span class="comment"># optional second argument sets active (True) or inactive (False), active by default</span></div>
 <div class="line">kactus2py.setDefaultLibraryPath(<span class="stringliteral">&quot;C:/some/path&quot;</span>)</div>
+<div class="line">kactus2py.setLibraryPathActive(<span class="stringliteral">&quot;C:/some/path&quot;</span>, <span class="keyword">True</span>) <span class="comment"># set the earlier path active</span></div>
 <div class="line">...</div>
 <div class="line">kactus2py.setLibraryPaths([<span class="stringliteral">&#39;C:/some/new/path&#39;</span>, <span class="stringliteral">&#39;C:/another/new/path&#39;</span>]) <span class="comment"># Replaces the active library paths and also sets the first listed path as default</span></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
