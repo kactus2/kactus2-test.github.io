@@ -6,6 +6,7 @@ var searchData=
   ['url_5fvalidity_5freg_5fexp_3',['URL_VALIDITY_REG_EXP',['../namespaceFileHandler.html#a220f3403361909a05146365fb8a8439e',1,'FileHandler::URL_VALIDITY_REG_EXP'],['../namespaceUtils.html#af42a230fa55a849124d61c1b0430ae4e',1,'Utils::URL_VALIDITY_REG_EXP()']]],
   ['usable_20kactusapi_20interfaces_4',['Usable KactusAPI interfaces',['../index.html#autotoc_md2',1,'']]],
   ['usage_5',['PythonAPI usage',['../index.html#autotoc_md1',1,'']]],
-  ['utils_6',['Utils',['../namespaceUtils.html',1,'']]],
-  ['utils_2eh_7',['utils.h',['../utils_8h.html',1,'']]]
+  ['used_20in_20bus_20interface_6',['Practical example: Getting physical ports used in bus interface',['../examples.html#autotoc_md12',1,'']]],
+  ['utils_7',['Utils',['../namespaceUtils.html',1,'']]],
+  ['utils_2eh_8',['utils.h',['../utils_8h.html',1,'']]]
 ];

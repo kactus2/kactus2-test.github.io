@@ -139,6 +139,9 @@ $(function(){initNavTree('examples.html',''); initResizable(true); });
       <li class="level2">
         <a href="#autotoc_md11">Modifying component bus interfaces</a>
       </li>
+      <li class="level2">
+        <a href="#autotoc_md12">Practical example: Getting physical ports used in bus interface</a>
+      </li>
     </ul>
   </li>
 </ul>
@@ -171,7 +174,8 @@ Creating a component</h1>
 <div class="line">version = <span class="stringliteral">&quot;1.0&quot;</span></div>
 <div class="line"> </div>
 <div class="line">kactus2py.createComponent(vendor, library, name, version, kactus2py.Std14)</div>
-</div><!-- fragment --><p>Currently, the created component will be placed in the <b>default library path</b>. Supported standard revisions are Std14 and Std22 and the default value is Std22.</p>
+</div><!-- fragment --><p>The created component will be placed in the <b>default library path</b>.</p>
+<dl class="section note"><dt>Note</dt><dd>Supported standard revisions are Std14 and Std22 and the default value is Std22.</dd></dl>
 <p>The IP-XACT standard revision of a component can be checked with PythonAPI::getComponentStdRevision : </p><div class="fragment"><div class="line">revision = kactus2py.getComponentStdRevision() <span class="comment"># Returns &quot;1685-2014&quot; in this case</span></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
 Creating a design and adding a component instance</h1>
@@ -181,7 +185,7 @@ Creating a design and adding a component instance</h1>
 <div class="line"> </div>
 <div class="line">kactus2py.createDesign(vendor, library, designName, designVersion, kactus2py.Std14)</div>
 </div><!-- fragment --><p>The IP-XACT standard revision of a design can also be checked with PythonAPI::getDesignStdRevision.</p>
-<p>Creating a design will create 1) The design itself and 2) A top-level component for the design. The top-level component VLNV will become vendor:library:name:version and the design VLNV will become vendor:library:name.design:version. As with components, the design will also be created in the default library.</p>
+<p>Creating a design will create 1) The design itself and 2) A top-level component for the design. The top-level component VLNV will become vendor:library:name:version and the design VLNV will become vendor:library:name.design:version. The design will be created in the default library.</p>
 <p>The component can then be instantiated and added to the design. Creating a design will automatically set it as active, but in any other case the design must be set active with <a class="el" href="classPythonAPI.html#afae64475954faa45d272b75c0a67de88">PythonAPI::openDesign</a>, which takes the design VLNV as a vlnvString (vendor:library:name:version).</p>
 <p>The component can be instantiated and added to the design with <a class="el" href="classPythonAPI.html#ab151e5e284a634dce73427d924439f27">PythonAPI::addComponentInstance</a>, which also takes a vlnvstring and the instance name:</p>
 <div class="fragment"><div class="line">kactus2py.openDesign(<span class="stringliteral">&quot;:&quot;</span>.join([vendor, library, designName + <span class="stringliteral">&quot;.design&quot;</span>, designVersion]))</div>
@@ -227,7 +231,7 @@ Adding registers and fields</h3>
 Modifying component bus interfaces</h2>
 <p>The components bus interfaces are directly accessible through the <a class="el" href="classBusInterfaceInterface.html" title="Interface for accessing bus interfaces.">BusInterfaceInterface</a> class, after <a class="el" href="classPythonAPI.html#a311926338ac81d14db6e87ed1b5ebeda">PythonAPI::openComponent</a> has been called.</p>
 <p>In this example, we'll first create some ports for our component. Then, we'll create a bus interface and some portmaps for it. For mapping ports, we need a bus- and abstraction definition, which cannot be created via the python API, but can be created in the GUI.</p>
-<p>The bus definition created for this example is not modified in any way and its VLNV is Company:Lib:TestBus:1.0. The abstraction defintion is Company:Lib:TestBus.absDef:1.0. Here's abstraction definition used: <img src="testAbsDef.png" alt="" class="inline" title="Example abstraction definition"/>    </p>
+<p>The bus definition created for this example is not modified in any way and its VLNV is Company:Lib:TestBus:1.0. The abstraction defintion is Company:Lib:TestBus.absDef:1.0. Here's the abstraction definition used: <img src="testAbsDef.png" alt="" class="inline" title="Example abstraction definition"/>    </p>
 <p>Let's start by creating the physical component ports: </p><div class="fragment"><div class="line">portsInterface = kactus2py.getPortsInterface()</div>
 <div class="line">portsInterface.addWirePort(<span class="stringliteral">&quot;some_rx&quot;</span>)</div>
 <div class="line">portsInterface.setDirection(<span class="stringliteral">&quot;some_rx&quot;</span>, <span class="stringliteral">&quot;in&quot;</span>)</div>
@@ -284,7 +288,35 @@ Modifying component bus interfaces</h2>
 <div class="line"><span class="comment"># If no port mapping bounds are set, then the whole logical and physical ports will be used.</span></div>
 </div><!-- fragment --><p>Resulting ports shown in GUI after running script: <img src="result_ports.png" alt="" class="inline" title="Created ports"/>    </p>
 <p>The created bus interface: <img src="result_bus.png" alt="" class="inline" title="Created bus interface"/>    </p>
-<p>And the portmaps: <img src="result_portmaps.png" alt="" class="inline" title="Created portmaps"/>     </p>
+<p>And the portmaps: <img src="result_portmaps.png" alt="" class="inline" title="Created portmaps"/>    </p>
+<h2><a class="anchor" id="autotoc_md12"></a>
+Practical example: Getting physical ports used in bus interface</h2>
+<p>Assuming we have a component with a bus interface with portmaps (like in the previous example), to print information of the physical ports a bus interface is using, we can do the following:</p>
+<div class="fragment"><div class="line"><span class="comment"># Assume component has already been opened, and the component has the bus interface &quot;NewBusInterface&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment"># Set up the sub-interfaces</span></div>
+<div class="line">busInterfaceInterface = kactus2py.getBusInterface()</div>
+<div class="line">busInterfaceInterface.setupSubInterfaces(<span class="stringliteral">&quot;NewBusInterface&quot;</span>)</div>
+<div class="line">abstractionInterface = busInterfaceInterface.getAbstractionTypeInterface()</div>
+<div class="line">abstractionInterface.setupAbstractionTypeForPortMapInterface(0)</div>
+<div class="line">portMapInterface = abstractionInterface.getPortMapInterface()</div>
+<div class="line"> </div>
+<div class="line">numPortMaps = portMapInterface.itemCount()</div>
+<div class="line">foundPorts = []</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(0, numPortMaps):</div>
+<div class="line">    currentPhysical = portMapInterface.getPhysicalPortName()</div>
+<div class="line">    print(currentPhysical)</div>
+<div class="line">    foundPorts.append(currentPhysical)</div>
+</div><!-- fragment --><p>Then the individual ports can be accessed with KactusAPI::PortsInterface: </p><div class="fragment"><div class="line">portsInterface = kactus2py.getPortsInterface()</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(0, numPortMaps):</div>
+<div class="line">    print(portsInterface.getWidth(foundPorts[i]))</div>
+</div><!-- fragment --><p> With the previous example, the above should print </p><div class="fragment"><div class="line">some_tx</div>
+<div class="line">1</div>
+<div class="line">some_rx</div>
+<div class="line">1</div>
+</div><!-- fragment --><p>Notice how the previously added extra ports <code>otherPort1</code> and <code>otherPort2</code> don't show up, because they weren't mapped to any logical signals. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
